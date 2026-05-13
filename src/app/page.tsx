@@ -45,6 +45,7 @@ const products: Product[] = [
     image: "/oil-angst-coffee-hoodie.png",
     secondaryImage: "/oil-angst-coffee-hoodie-alt.png",
     imageAlt: "Oil, Angst and Coffee hoodie placeholder",
+    shopUrl: "https://elderemogarage-shop.fourthwall.com/admin/v3/designer/offer/cud_jzE_C_NMQz2K8_dWIseAJw/details",
     description: "Black hoodie placeholder with chest logo detail and oversized back art for cold starts and loud playlists.",
   },
   {
@@ -61,7 +62,17 @@ const products: Product[] = [
     tag: "Shop Fuel",
     image: "/emo-coffee-mug.png",
     imageAlt: "Oil, Angst and Coffee mug placeholder",
+    shopUrl: "https://elderemogarage-shop.fourthwall.com/admin/v3/designer/offer/cud_jzE_C_NMQz2K8_dWIseAJw/details",
     description: "Black ceramic mug placeholder for coffee while the scan tool judges your choices.",
+  },
+  {
+    name: "EEG Trucker Cap",
+    price: "See Shop",
+    tag: "New",
+    image: "/elder-emo-garage-logo-print.png",
+    imageAlt: "Elder Emo Garage trucker cap placeholder",
+    shopUrl: "https://elderemogarage-shop.fourthwall.com/products/eeg-trucker-cap",
+    description: "Trucker cap placeholder for keeping the sun out of your eyes while the engine bay ruins your afternoon.",
   },
   {
     name: "EEG Mechanic's Shirt",
