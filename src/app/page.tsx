@@ -22,9 +22,9 @@ const products = [
     name: "Elder Emo Garage Logo T-Shirt",
     price: "$24",
     tag: "Logo Drop",
-    image: "/elder-emo-garage-logo-print.png",
-    imageAlt: "Elder Emo Garage logo for t-shirt placeholder",
-    description: "Soft black tee placeholder with the full Elder Emo Garage logo front and center.",
+    image: "/emo-t-shirt.png",
+    imageAlt: "Elder Emo Garage logo t-shirt placeholder",
+    description: "Soft black tee placeholder with front chest art and full-size Elder Emo Garage back print.",
   },
   {
     name: "Oil, Angst & Coffee Hoodie",
@@ -39,17 +39,25 @@ const products = [
     name: "Elder Emo Garage Sticker Pack",
     price: "$12",
     tag: "New",
-    image: "/elder-emo-garage-logo-print.png",
-    imageAlt: "Elder Emo Garage logo sticker pack placeholder",
-    description: "Vinyl sticker pack placeholder featuring the garage logo for toolboxes, laptops, helmets, and project cars.",
+    image: "/emo-stickers.png",
+    imageAlt: "Elder Emo Garage sticker pack placeholder",
+    description: "Vinyl sticker pack placeholder for toolboxes, laptops, helmets, project cars, and bad decisions.",
   },
   {
     name: "Elder Emo Garage Logo Mug",
     price: "$21",
     tag: "Shop Fuel",
-    image: "/elder-emo-garage-logo-print.png",
-    imageAlt: "Elder Emo Garage logo mug placeholder",
-    description: "Ceramic mug placeholder with the Elder Emo Garage logo for coffee while the scan tool judges your choices.",
+    image: "/emo-coffee-mug.png",
+    imageAlt: "Oil, Angst and Coffee mug placeholder",
+    description: "Black ceramic mug placeholder for coffee while the scan tool judges your choices.",
+  },
+  {
+    name: "EEG Mechanic's Shirt",
+    price: "$75",
+    tag: "Shop Uniform",
+    image: "/emo-mechanic-shirt.png",
+    imageAlt: "Elder Emo Garage mechanic's shirt placeholder",
+    description: "Button-up mechanic's shirt placeholder with chest detail and full Elder Emo Garage back art.",
   },
 ];
 
@@ -187,7 +195,7 @@ export default function Home() {
             <p className="text-sm font-bold uppercase tracking-[0.35em] text-red-500">Merch</p>
             <h2 className="mt-3 text-4xl font-black md:text-5xl">Shop the garage wall.</h2>
 
-            <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+            <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
               {products.map((product) => (
                 <Card key={product.name} className="overflow-hidden border-white/10 bg-zinc-900/90">
                   <CardContent className="p-5">
