@@ -17,13 +17,25 @@ import {
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
-const products = [
+type Product = {
+  name: string;
+  price: string;
+  tag: string;
+  image: string;
+  imageAlt: string;
+  description: string;
+  secondaryImage?: string;
+  shopUrl?: string;
+};
+
+const products: Product[] = [
   {
     name: "Elder Emo Garage Logo T-Shirt",
-    price: "$24",
+    price: "$32",
     tag: "Logo Drop",
     image: "/emo-t-shirt.png",
     imageAlt: "Elder Emo Garage logo t-shirt placeholder",
+    shopUrl: "https://elderemogarage-shop.fourthwall.com/products/eeg-tee",
     description: "Soft black tee placeholder with front chest art and full-size Elder Emo Garage back print.",
   },
   {
@@ -200,20 +212,45 @@ export default function Home() {
               {products.map((product) => (
                 <Card key={product.name} className="overflow-hidden border-white/10 bg-zinc-900/90">
                   <CardContent className="p-5">
-                    <div className="relative mb-5 flex aspect-square items-center justify-center overflow-hidden rounded-2xl border border-white/10 bg-black/60 p-4">
-                      <img
-                        src={product.image}
-                        alt={product.imageAlt}
-                        className="max-h-full max-w-full object-contain"
-                      />
-                      {product.secondaryImage ? (
+                    {product.shopUrl ? (
+                      <a
+                        href={product.shopUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="group relative mb-5 flex aspect-square items-center justify-center overflow-hidden rounded-2xl border border-white/10 bg-black/60 p-4 transition hover:-translate-y-1 hover:border-red-500/50"
+                      >
                         <img
-                          src={product.secondaryImage}
-                          alt="Alternate Oil, Angst and Coffee hoodie placeholder"
-                          className="absolute bottom-3 right-3 h-20 w-16 rounded-xl border border-white/15 bg-black object-cover shadow-xl shadow-black/40"
+                          src={product.image}
+                          alt={product.imageAlt}
+                          className="max-h-full max-w-full object-contain transition group-hover:scale-105"
                         />
-                      ) : null}
-                    </div>
+                        {product.secondaryImage ? (
+                          <img
+                            src={product.secondaryImage}
+                            alt="Alternate Oil, Angst and Coffee hoodie placeholder"
+                            className="absolute bottom-3 right-3 h-20 w-16 rounded-xl border border-white/15 bg-black object-cover shadow-xl shadow-black/40"
+                          />
+                        ) : null}
+                        <span className="absolute bottom-3 left-3 rounded-full bg-red-600 px-3 py-1 text-xs font-black uppercase text-white opacity-0 shadow-lg shadow-black/40 transition group-hover:opacity-100">
+                          View Product
+                        </span>
+                      </a>
+                    ) : (
+                      <div className="relative mb-5 flex aspect-square items-center justify-center overflow-hidden rounded-2xl border border-white/10 bg-black/60 p-4">
+                        <img
+                          src={product.image}
+                          alt={product.imageAlt}
+                          className="max-h-full max-w-full object-contain"
+                        />
+                        {product.secondaryImage ? (
+                          <img
+                            src={product.secondaryImage}
+                            alt="Alternate Oil, Angst and Coffee hoodie placeholder"
+                            className="absolute bottom-3 right-3 h-20 w-16 rounded-xl border border-white/15 bg-black object-cover shadow-xl shadow-black/40"
+                          />
+                        ) : null}
+                      </div>
+                    )}
                     <span className="rounded-full bg-red-600 px-3 py-1 text-xs font-bold uppercase">
                       {product.tag}
                     </span>
