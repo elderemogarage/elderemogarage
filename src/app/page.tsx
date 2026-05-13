@@ -45,7 +45,7 @@ const products: Product[] = [
     image: "/oil-angst-coffee-hoodie.png",
     secondaryImage: "/oil-angst-coffee-hoodie-alt.png",
     imageAlt: "Oil, Angst and Coffee hoodie placeholder",
-    shopUrl: "https://elderemogarage-shop.fourthwall.com/admin/v3/designer/offer/cud_jzE_C_NMQz2K8_dWIseAJw/details",
+    shopUrl: "https://elderemogarage-shop.fourthwall.com/products/elder-emo-garage-oil-angst-coffee-hoodie",
     description: "Black hoodie placeholder with chest logo detail and oversized back art for cold starts and loud playlists.",
   },
   {
