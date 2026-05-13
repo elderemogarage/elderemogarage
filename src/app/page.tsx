@@ -57,6 +57,7 @@ const products = [
     tag: "Shop Uniform",
     image: "/emo-mechanic-shirt.png",
     imageAlt: "Elder Emo Garage mechanic's shirt placeholder",
+    shopUrl: "https://elderemogarage-shop.fourthwall.com/products/eeg-mech-shirt",
     description: "Button-up mechanic's shirt placeholder with chest detail and full Elder Emo Garage back art.",
   },
 ];
@@ -219,8 +220,16 @@ export default function Home() {
                     <h3 className="mt-5 text-xl font-black">{product.name}</h3>
                     <p className="mt-2 font-black text-red-400">{product.price}</p>
                     <p className="mt-3 min-h-24 text-sm leading-6 text-zinc-400">{product.description}</p>
-                    <Button className="mt-5 w-full rounded-2xl">
-                      <ShoppingCart className="mr-2 h-4 w-4" /> Add Shop Link
+                    <Button asChild={Boolean(product.shopUrl)} className="mt-5 w-full rounded-2xl">
+                      {product.shopUrl ? (
+                        <a href={product.shopUrl} target="_blank" rel="noreferrer">
+                          <ShoppingCart className="mr-2 h-4 w-4" /> Shop Now
+                        </a>
+                      ) : (
+                        <span className="inline-flex items-center justify-center">
+                          <ShoppingCart className="mr-2 h-4 w-4" /> Add Shop Link
+                        </span>
+                      )}
                     </Button>
                   </CardContent>
                 </Card>
