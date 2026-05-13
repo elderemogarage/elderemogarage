@@ -19,28 +19,37 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const products = [
   {
-    name: "Elder Emo Garage Tee",
-    price: "$28",
-    tag: "Best Seller",
-    description: "Soft black tee for late-night wrenching and parking-lot philosophy.",
+    name: "Elder Emo Garage Logo T-Shirt",
+    price: "$24",
+    tag: "Logo Drop",
+    image: "/elder-emo-garage-logo-print.png",
+    imageAlt: "Elder Emo Garage logo for t-shirt placeholder",
+    description: "Soft black tee placeholder with the full Elder Emo Garage logo front and center.",
   },
   {
     name: "Oil, Angst & Coffee Hoodie",
-    price: "$54",
+    price: "$65",
     tag: "Cold Garage Approved",
-    description: "Heavyweight hoodie for cold starts, busted knuckles, and loud playlists.",
+    image: "/oil-angst-coffee-hoodie.png",
+    secondaryImage: "/oil-angst-coffee-hoodie-alt.png",
+    imageAlt: "Oil, Angst and Coffee hoodie placeholder",
+    description: "Black hoodie placeholder with chest logo detail and oversized back art for cold starts and loud playlists.",
   },
   {
-    name: "Garage Goblin Sticker Pack",
+    name: "Elder Emo Garage Sticker Pack",
     price: "$12",
     tag: "New",
-    description: "Vinyl stickers for toolboxes, laptops, helmets, and questionable project cars.",
+    image: "/elder-emo-garage-logo-print.png",
+    imageAlt: "Elder Emo Garage logo sticker pack placeholder",
+    description: "Vinyl sticker pack placeholder featuring the garage logo for toolboxes, laptops, helmets, and project cars.",
   },
   {
-    name: "Check Engine Heart Mug",
-    price: "$18",
+    name: "Elder Emo Garage Logo Mug",
+    price: "$21",
     tag: "Shop Fuel",
-    description: "A ceramic mug for coffee while the scan tool judges your life choices.",
+    image: "/elder-emo-garage-logo-print.png",
+    imageAlt: "Elder Emo Garage logo mug placeholder",
+    description: "Ceramic mug placeholder with the Elder Emo Garage logo for coffee while the scan tool judges your choices.",
   },
 ];
 
@@ -180,8 +189,22 @@ export default function Home() {
 
             <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
               {products.map((product) => (
-                <Card key={product.name} className="border-white/10 bg-zinc-900/90">
+                <Card key={product.name} className="overflow-hidden border-white/10 bg-zinc-900/90">
                   <CardContent className="p-5">
+                    <div className="relative mb-5 flex aspect-square items-center justify-center overflow-hidden rounded-2xl border border-white/10 bg-black/60 p-4">
+                      <img
+                        src={product.image}
+                        alt={product.imageAlt}
+                        className="max-h-full max-w-full object-contain"
+                      />
+                      {product.secondaryImage ? (
+                        <img
+                          src={product.secondaryImage}
+                          alt="Alternate Oil, Angst and Coffee hoodie placeholder"
+                          className="absolute bottom-3 right-3 h-20 w-16 rounded-xl border border-white/15 bg-black object-cover shadow-xl shadow-black/40"
+                        />
+                      ) : null}
+                    </div>
                     <span className="rounded-full bg-red-600 px-3 py-1 text-xs font-bold uppercase">
                       {product.tag}
                     </span>
