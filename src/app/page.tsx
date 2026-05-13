@@ -54,6 +54,7 @@ const products: Product[] = [
     tag: "New",
     image: "/emo-stickers.png",
     imageAlt: "Elder Emo Garage sticker pack placeholder",
+    shopUrl: "https://elderemogarage-shop.fourthwall.com/products/eeg-sticker-pack",
     description: "Vinyl sticker pack placeholder for toolboxes, laptops, helmets, project cars, and bad decisions.",
   },
   {
