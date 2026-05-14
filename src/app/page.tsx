@@ -39,6 +39,15 @@ const products: Product[] = [
     description: "Soft black tee placeholder with front chest art and full-size Elder Emo Garage back print.",
   },
   {
+    name: "EEG Missing 10mm Socket Tee",
+    price: "See Shop",
+    tag: "New Tee",
+    image: "/eeg-missing-10mm-tee.png",
+    imageAlt: "Elder Emo Garage Missing 10mm Socket tee placeholder",
+    shopUrl: "https://elderemogarage-shop.fourthwall.com/products/eeg-missing-10mm-t-shirt",
+    description: "Black tee for the socket that vanished, the wrench set that knows too much, and the project that started simple.",
+  },
+  {
     name: "Oil, Angst & Coffee Hoodie",
     price: "$65",
     tag: "Cold Garage Approved",
