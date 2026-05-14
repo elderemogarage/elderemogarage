@@ -348,9 +348,9 @@ export default function Home() {
         <footer id="contact" className="bg-black/90 px-5 py-12">
           <div className="mx-auto flex max-w-7xl flex-col justify-between gap-6 border-t border-white/10 pt-8 md:flex-row">
             <p className="text-zinc-500">© 2026 Elder Emo Garage. All rights reserved.</p>
-            <a className="text-zinc-300 hover:text-white" href="mailto:hello@elderemogarage.com">
+            <a className="text-zinc-300 hover:text-white" href="mailto:skully@elderemogarage.com">
               <Mail className="mr-2 inline h-4 w-4" />
-              hello@elderemogarage.com
+              skully@elderemogarage.com
             </a>
           </div>
         </footer>
