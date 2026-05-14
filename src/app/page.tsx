@@ -48,6 +48,15 @@ const products: Product[] = [
     description: "Black tee for the socket that vanished, the wrench set that knows too much, and the project that started simple.",
   },
   {
+    name: "EEG I’m Not Okay 10mm Tee",
+    price: "See Shop",
+    tag: "New Tee",
+    image: "/eeg-im-not-okay-10mm-tee.jpg",
+    imageAlt: "Elder Emo Garage I’m Not Okay I’m Missing My 10mm t-shirt placeholder",
+    shopUrl: "https://elderemogarage-shop.fourthwall.com/products/eeg-im-not-okay-im-missing-my-10mm-t-shirt",
+    description: "Black tee for anyone who is emotionally stable until the 10mm socket disappears again.",
+  },
+  {
     name: "Oil, Angst & Coffee Hoodie",
     price: "$65",
     tag: "Cold Garage Approved",
