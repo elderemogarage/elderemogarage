@@ -162,14 +162,14 @@ export default function Home() {
 
         <section className="relative min-h-[calc(100vh-96px)] overflow-hidden px-5 py-24">
           <div
-            className="absolute inset-0 bg-cover bg-center opacity-70"
+            className="absolute inset-0 bg-cover bg-[35%_center] opacity-80 md:bg-left"
             style={{ backgroundImage: "url('/goth-road-hero.png')" }}
           />
-          <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,0,0,0.94),rgba(0,0,0,0.66)_42%,rgba(0,0,0,0.18)),linear-gradient(0deg,rgba(5,5,5,1),transparent_28%,rgba(5,5,5,0.35))]" />
+          <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,0,0,0.8),rgba(0,0,0,0.28)_42%,rgba(0,0,0,0.86)),linear-gradient(0deg,rgba(5,5,5,1),transparent_28%,rgba(5,5,5,0.28))]" />
           <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[#050505] to-transparent" />
 
-          <div className="relative mx-auto flex min-h-[68vh] max-w-7xl items-center">
-            <motion.div initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} className="max-w-3xl">
+          <div className="relative mx-auto flex min-h-[68vh] max-w-7xl items-center md:justify-end">
+            <motion.div initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} className="max-w-3xl md:max-w-2xl md:text-right">
               <div className="mb-5 inline-flex items-center gap-2 border border-red-500/40 bg-black/60 px-4 py-2 text-sm font-black uppercase tracking-[0.22em] text-red-100 shadow-lg shadow-red-950/30">
                 <Sparkles className="h-4 w-4" />
                 Goth garage gospel for the permanently tuned-out
@@ -185,7 +185,7 @@ export default function Home() {
                 and loud music for people keeping old machines alive by spite and caffeine.
               </p>
 
-              <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+              <div className="mt-8 flex flex-col gap-3 sm:flex-row md:justify-end">
                 <Button asChild size="lg" className="rounded-none bg-red-700 font-black uppercase tracking-[0.15em] hover:bg-red-600">
                   <a href="#merch"><ShoppingCart className="mr-2 h-5 w-5" /> Shop Merch</a>
                 </Button>
@@ -194,7 +194,7 @@ export default function Home() {
                 </Button>
               </div>
 
-              <div className="mt-10 grid max-w-2xl gap-3 sm:grid-cols-3">
+              <div className="mt-10 grid max-w-2xl gap-3 sm:grid-cols-3 md:ml-auto">
                 {["Oil", "Angst", "Caffeine"].map((word) => (
                   <div key={word} className="border border-white/10 bg-black/55 px-4 py-3 shadow-xl shadow-black/30">
                     <p className="font-typewriter text-xs uppercase tracking-[0.25em] text-zinc-500">Runs on</p>
