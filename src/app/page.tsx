@@ -35,7 +35,7 @@ const products: Product[] = [
     tag: "Logo Drop",
     image: "/emo-t-shirt.png",
     imageAlt: "Elder Emo Garage logo t-shirt placeholder",
-    shopUrl: "https://elderemogarage-shop.fourthwall.com/products/eeg-tee",
+    shopUrl: "https://shop.elderemogarage.com/products/eeg-tee",
     description: "Soft black tee placeholder with front chest art and full-size Elder Emo Garage back print.",
   },
   {
@@ -44,7 +44,7 @@ const products: Product[] = [
     tag: "New Tee",
     image: "/eeg-missing-10mm-tee.png",
     imageAlt: "Elder Emo Garage Missing 10mm Socket tee placeholder",
-    shopUrl: "https://elderemogarage-shop.fourthwall.com/products/eeg-missing-10mm-t-shirt",
+    shopUrl: "https://shop.elderemogarage.com/products/eeg-missing-10mm-t-shirt",
     description: "Black tee for the socket that vanished, the wrench set that knows too much, and the project that started simple.",
   },
   {
@@ -53,7 +53,7 @@ const products: Product[] = [
     tag: "New Tee",
     image: "/eeg-im-not-okay-10mm-tee.jpg",
     imageAlt: "Elder Emo Garage I’m Not Okay I’m Missing My 10mm t-shirt placeholder",
-    shopUrl: "https://elderemogarage-shop.fourthwall.com/products/eeg-im-not-okay-im-missing-my-10mm-t-shirt",
+    shopUrl: "https://shop.elderemogarage.com/products/eeg-im-not-okay-im-missing-my-10mm-t-shirt",
     description: "Black tee for anyone who is emotionally stable until the 10mm socket disappears again.",
   },
   {
@@ -63,7 +63,7 @@ const products: Product[] = [
     image: "/oil-angst-coffee-hoodie.png",
     secondaryImage: "/oil-angst-coffee-hoodie-alt.png",
     imageAlt: "Oil, Angst and Coffee hoodie placeholder",
-    shopUrl: "https://elderemogarage-shop.fourthwall.com/products/elder-emo-garage-oil-angst-coffee-hoodie",
+    shopUrl: "https://shop.elderemogarage.com/products/elder-emo-garage-oil-angst-coffee-hoodie",
     description: "Black hoodie placeholder with chest logo detail and oversized back art for cold starts and loud playlists.",
   },
   {
@@ -72,7 +72,7 @@ const products: Product[] = [
     tag: "New",
     image: "/emo-stickers.png",
     imageAlt: "Elder Emo Garage sticker pack placeholder",
-    shopUrl: "https://elderemogarage-shop.fourthwall.com/products/eeg-sticker-pack",
+    shopUrl: "https://shop.elderemogarage.com/products/eeg-sticker-pack",
     description: "Vinyl sticker pack placeholder for toolboxes, laptops, helmets, project cars, and bad decisions.",
   },
   {
@@ -81,7 +81,7 @@ const products: Product[] = [
     tag: "Shop Fuel",
     image: "/emo-coffee-mug.png",
     imageAlt: "Oil, Angst and Coffee mug placeholder",
-    shopUrl: "https://elderemogarage-shop.fourthwall.com/products/elder-emo-garage-oil-angst-coffee-mug",
+    shopUrl: "https://shop.elderemogarage.com/products/elder-emo-garage-oil-angst-coffee-mug",
     description: "Black ceramic mug placeholder for coffee while the scan tool judges your choices.",
   },
   {
@@ -90,7 +90,7 @@ const products: Product[] = [
     tag: "New",
     image: "/eeg-trucker-cap.png",
     imageAlt: "Elder Emo Garage trucker cap placeholder",
-    shopUrl: "https://elderemogarage-shop.fourthwall.com/products/eeg-trucker-cap",
+    shopUrl: "https://shop.elderemogarage.com/products/eeg-trucker-cap",
     description: "Trucker cap placeholder for keeping the sun out of your eyes while the engine bay ruins your afternoon.",
   },
   {
@@ -99,7 +99,7 @@ const products: Product[] = [
     tag: "Shop Uniform",
     image: "/emo-mechanic-shirt.png",
     imageAlt: "Elder Emo Garage mechanic's shirt placeholder",
-    shopUrl: "https://elderemogarage-shop.fourthwall.com/products/eeg-mech-shirt",
+    shopUrl: "https://shop.elderemogarage.com/products/eeg-mech-shirt",
     description: "Button-up mechanic's shirt placeholder with chest detail and full Elder Emo Garage back art.",
   },
 ];
